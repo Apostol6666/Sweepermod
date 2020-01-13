@@ -1,0 +1,181 @@
+/* 
+blue 67d8e9
+brown 503d2e
+red e4001b
+yellow e3a72f
+light d8d8d8
+
+#line-height
+box-sizing:content-box;
+border-box
+*/
+
+body{
+    background-color: 9ff2ff;
+}
+
+.workspace {
+    margin:0 auto;
+    padding-top:5px;
+}
+
+.block {
+    width:40px;
+    height:40px;
+    background: #e4001b 0% 0% no-repeat padding-box;
+    border: 5px solid #ffffff;
+    border-style:dashed;
+    opacity: 1;
+    margin:6px;
+    float:left;
+    text-align:center;
+    vertical-align:middle;
+}
+
+
+.blockbomb {
+    width:50px;
+    height:50px;
+    background: transparent url('bbbomb.png') 0% 0% no-repeat padding-box;
+    background-size:50px 50px;
+    margin:6px;
+    padding:0px;
+    float:left;
+    transition: transform 7000ms;
+}
+
+.flag {
+    border: 5px solid #e4001b;
+    width:40px;
+    height:40px;
+    background: transparent url('flag.png') 0% 0% no-repeat padding-box;
+    background-size:28px 28px;
+    background-position:center center;
+    border-style:dashed;
+    opacity: 1;
+    margin:6px;
+    padding:0px;
+    float:left;
+}
+
+.name {
+    margin:0 auto;
+  width:1220px;
+    font-size:100px;
+    text-align:center;
+    font-family: 'Montserrat';
+    color: #7d7d7d;
+    -webkit-text-stroke: 2px rgb(100%, 100%, 100%, 0.3);
+    -webkit-text-fill-color: rgb(0%, 44%, 45%, 0.5);
+    transition: transform 0.6s  cubic-bezier(1, 0, 0, 1);
+   text-align:center;
+   font-size: 60px;
+   font-family: 'Montserrat';
+}
+.name:hover {
+    text-shadow: -8px 8px 0px rgb(100%, 100%, 100%, 0.5);
+        transition: 0.3s;
+  }
+
+.size_pol {
+    float:right;
+    margin-right:120px;
+    margin-top:-50px;
+}
+
+input {
+    width:25px;
+    height:25px;
+    font-family: 'Montserrat';
+    color: #7d7d7d;
+}
+
+.ghosttext {
+    visibility: hidden;
+    font-family: 'Montserrat';
+    color: #fff;
+    height:40px;
+    margin:auto;
+    font-size:25px;
+    position:relative;
+    transition:300ms;
+}
+
+button {
+    font-family: 'Montserrat';
+    color: #7d7d7d;
+}
+
+  
+  .blockbomb.move {
+    transform: rotate(290deg);
+  }
+
+  .youlose {
+      margin: 0 auto;
+      position:absolute;
+      width:600px;
+      height:400px;
+      margin-left:450px;
+      margin-top:150px;
+      font-size:100px;
+      text-align:center;
+      font-family: 'Montserrat';
+      color: #7d7d7d;
+      -webkit-text-stroke: 2px rgb(100%, 100%, 100%, 0.3);
+      -webkit-text-fill-color: rgb(0%, 44%, 45%, 0.5);
+      transition: transform 0.6s  cubic-bezier(1, 0, 0, 1);
+    }
+
+  .youlose:hover {
+    text-shadow: -8px 8px 0px rgb(100%, 100%, 100%, 0.5);
+        transition: 0.3s;
+  }
+
+  .losebutt {
+      width:200px;
+      height:100px;
+      display:block;
+      font-size: 20px;
+      background-color: rgb(100%, 100%, 100%, 0.5);
+      border:0px;
+      margin-left:200px;
+  }
+
+  .youwin {
+    margin: 0 auto;
+    position:absolute;
+    width:600px;
+    height:400px;
+    margin-left:300px;
+    margin-top:100px;
+    font-size:100px;
+    text-align:center;
+    font-family: 'Montserrat';
+    color: #7d7d7d;
+    -webkit-text-stroke: 2px rgb(100%, 100%, 100%, 0.3);
+    -webkit-text-fill-color: rgb(0%, 44%, 45%, 0.5);
+    transition: transform 0.6s  cubic-bezier(1, 0, 0, 1);
+  }
+
+.youwin:hover {
+  text-shadow: -8px 8px 0px rgb(100%, 100%, 100%, 0.5);
+      transition: 0.3s;
+}
+
+.ghost {
+    display:none;
+}
+
+.bl {
+    width:100%;
+    height:100%;
+    position:absolute;
+    
+    background: transparent url('39wf.gif') 0% 0% no-repeat padding-box;
+    background-size:2000px 1200px;
+}
+
+body {
+    margin:0;
+}
